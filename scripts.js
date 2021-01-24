@@ -1,6 +1,10 @@
+
 function validateEmail(str) {
-    true
-}
+    var emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/; 
+    // The email validator, https://www.w3resource.com/javascript/form/email-validation.php
+    
+    return emailPattern.test(str);
+  }
 
 function onFocus() {
     if (document.activeElement.tagName != "INPUT") {
