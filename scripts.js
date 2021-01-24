@@ -18,16 +18,15 @@ function ok() {
 }
 
 function showSuccess(){
-    document.getElementById("forum").innerHTML = document.getElementById(
+    document.getElementById("form").innerHTML = document.getElementById(
         "success",
-      ).innerHTML;
+      ).innerHTML; // simply replace with the success component
 }
 
 function validator() {
   var email = document.getElementById("email").value;
   if (validateEmail(email)) {
     showSuccess();
-    // simply replace with the success component
   } else {
     showError();
   }
