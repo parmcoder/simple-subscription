@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html onclick="onFocus()">
 <head>
     <meta charset="utf-8">
     <title>Subscription Form</title>
@@ -7,7 +7,7 @@
     <script src="scripts.js"></script>
 </head>
 
-<body onclick="onFocus()">
+<body >
     <div id="form" class="card">
         <h1 id="form-header">Subscribe Now!</h1>
         <label id="form-text" for="email">Email address</label>
@@ -15,11 +15,11 @@
         <span class="error">
             <p id="error-text"></p>
         </span>
-        <input type="submit" value="Subscribe" onclick="validator()" />
+        <button class="submit-button" onclick="validator()">Subscribe</button>
     </div>
 
     <div id="success" style="display: none">
-        <div class="sucess-card">
+        <div class="success-card">
             <h1 id="success-head">Thank you</h1>
             <p id="success-text">Your subscription was a success!</p>
         </div>

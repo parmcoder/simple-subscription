@@ -17,10 +17,10 @@ function ok() {
   document.getElementById("error-text").innerHTML = "";
 }
 
-function showSuccess(){
-    document.getElementById("form").innerHTML = document.getElementById(
-        "success",
-      ).innerHTML; // simply replace with the success component
+function showSuccess() {
+  document.getElementById("form").innerHTML = document.getElementById(
+    "success",
+  ).innerHTML; // simply replace with the success component
 }
 
 function validator() {
